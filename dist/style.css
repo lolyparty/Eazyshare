@@ -1,0 +1,73 @@
+:root{
+    --color: #090699;
+    --bg-color: #090699;
+    --logo-font:'Gochi Hand';
+}
+
+@font-face {
+    font-family: Girlory-medium;
+    src: url('font/Gilroy-Medium.ttf');
+  }
+
+
+*{
+    padding:0;
+    margin:0;
+}
+
+a.navbar-brand{
+    font-family: var(--logo-font) !important;
+    color: var(--color) !important;
+    font-size:1.5rem
+}
+
+.navbar-brand:hover{
+    color: var(--main-color);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background: var(--bg-color);
+}
+
+.circle1{
+    height:200px;
+    width:200px;
+    right:-95px;
+    top:-95px;
+    /* display:none; */
+}
+
+nav, .container{
+    overflow:hidden !important;
+}
+
+.sharenote, .coming, .notif{
+    font-family: Girlory-medium;
+}
+
+.sharenote{
+    color: var(--color);
+    line-height: 58px;
+    margin-top:4rem;
+}
+
+.mobile1{
+    height:500px;
+}
+
+input{
+    border-radius:5px;
+    border:1px solid #C4C4C4;
+    height:30px;
+    width:250px;
+}
+
+
+
+
