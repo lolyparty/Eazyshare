@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: Girlory-medium;
+    font-family: Gilroy-medium;
     src: url('font/Gilroy-Medium.ttf');
   }
 
@@ -51,8 +51,8 @@ nav, .container{
     overflow:hidden !important;
 }
 
-.sharenote, .coming, .notif{
-    font-family: Girlory-medium;
+.sharenote, .coming, .notif, button{
+    font-family: Gilroy-medium;
 }
 
 .sharenote{
@@ -86,14 +86,14 @@ input{
 .brandlogo{
     position:absolute !important;
     left:40%;
-    top:30%;
+    top:40%;
 }
 
 .circle2{
-    height:700px;
-    width:700px;
-    left:-250px;
-    top:400px !important;
+    height:800px;
+    width:800px;
+    left:-350px;
+    top:450px !important;
     z-index:-1 !important;
 }
 
