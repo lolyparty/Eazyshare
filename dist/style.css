@@ -15,7 +15,7 @@
     margin:0;
 }
 
-a.navbar-brand{
+a.navbar-brand, .brandlogo{
     font-family: var(--logo-font) !important;
     color: var(--color) !important;
     font-size:1.5rem
@@ -62,12 +62,34 @@ nav, .container{
 }
 
 input{
-    border-radius:5px;
+    border-radius:5px 0px 0px 5px !important;
     border:1px solid #C4C4C4;
     height:30px;
-    width:250px;
+    width:300px !important;
 }
 
+.submit{
+    height:37px !important;
+    border:none;
+    background: var(--bg-color);
+    color:#fff;
+    padding:3px 10px;
+    border-radius:0px 5px 5px 0px;
+    margin-top:-1px;
+}
 
+.brandlogo{
+    position:absolute !important;
+    left:20%;
+    top:30%;
+}
+
+.circle2{
+    height:650px;
+    width:650px;
+    left:-300px;
+    top:400px !important;
+    z-index:-1 !important;
+}
 
 
