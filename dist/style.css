@@ -105,13 +105,22 @@ footer{
     background: var(--color);
 }
 
-/* @media screen and (max-width:330px){
-    input{
-        width:100px !important;
-    }
-} */
+/* success and error page */
+.contain{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:Gilroy-medium;
+    font-size:1.2rem;
+    width:100%;
+    padding:50px;
+}
 
 
+
+/* media queries */
 @media screen and (max-width:451px){
     
     input{
