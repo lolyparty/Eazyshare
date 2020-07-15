@@ -4,6 +4,8 @@
     --logo-font:'Gochi Hand';
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 @font-face {
     font-family: Gilroy-medium;
     src: url('font/Gilroy-Medium.ttf');
@@ -21,11 +23,11 @@
 }
 
 .navbar-brand{
-    margin-top:-15px !important;
+    /* margin-top:-15px !important; */
 }
 
 a.navbar-brand, .brandlogo{
-    font-family: var(--logo-font) !important;
+    font-family: 'Gochi Hand';
     color: var(--color) !important;
     font-size:1.5rem
 }
