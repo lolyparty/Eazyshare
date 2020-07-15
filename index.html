@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link rel="preload" href="dist/style.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="dist/style.css" type="text/css">
     <title>Eazyshare</title>
 </head>
@@ -22,22 +22,22 @@
         <section class="pb-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 pt-md-5 mt-5 pt-2">
+                    <div class="col-md-6 pt-md-5 mt-5 pt-2" data-aos="fade-left">
                         <img src="img/undraw_drag_5i9w 1 1.svg" class="img-fluid mt-md-5" alt="pick and drop file">
                     </div>
 
                     <div class="col-md-6 text-center text-md-left">
-                        <div>
+                        <div data-aos="fade-right">
                             <h2 class="sharenote mt-4">File sharing just got easier<br /> with EazyShare</h2>
                         </div>
-                        <div >
+                        <div data-aos="fade-right">
                             <h3 class="coming pt-3 pb-3">Coming soon to</h3>
                         <div class="pb-5">
                             <a href="#"><img src="img/pngfuel 4.svg" class="img-fluid mr-3" alt="android play store"></a>
                             <a href="#"><img src="img/pngfuel 3.svg"class="img-fluid" alt="IOS app store"></a>
                         </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-up">
                             <p class="notif mb-1 mt-4">Become one of the first to know when Eazyshare app launches.</p>
                         <p class="notif">Enter your email to get notified</p>
                         <form method="POST" action="dist/insert.php" class="form-inline">
@@ -55,7 +55,7 @@
         <section class="pt-4 pb-3">
             <div class="container">
                 <h2 class="abouth text-center py-3">About</h2>
-                <p class="aboutp py-3">Eazyshare app defies the odds of using wifi, bluetooth and cellular network technology to connect to other devices. With the pick and drop method of sharing, Eazyshare is second to none. It saves you quality time by sharing apps, music, videos and files with friends and families in the blink of an eye.</p>
+                <p class="aboutp py-3">Eazyshare app defies the odds of using wifi, bluetooth and cellular network technology to connect to other devices such as android, ios, windows and macOs. With the pick and drop method of sharing, Eazyshare is second to none. It saves you quality time by sharing apps, music, videos and files to you loved ones in the blink of an eye. Its unlimited sharing volume comes in handy, as it does it in record time.</p>
             </div>
         </section>
 
@@ -105,5 +105,12 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // offset:0,
+            duration: 3000,
+        });
+      </script>
 </body>
 </html>
