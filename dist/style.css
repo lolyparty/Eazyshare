@@ -22,10 +22,6 @@
     margin:0;
 }
 
-.navbar-brand{
-    /* margin-top:-15px !important; */
-}
-
 a.navbar-brand, .brandlogo{
     font-family: 'Gochi Hand';
     color: var(--color) !important;
