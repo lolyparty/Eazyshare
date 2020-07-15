@@ -9,6 +9,11 @@
     src: url('font/Gilroy-Medium.ttf');
   }
 
+  @font-face {
+    font-family:Gilroy-bold;
+    src:url('font/Gilroy-Bold.ttf');
+  }
+
 
 *{
     padding:0;
@@ -25,40 +30,30 @@ a.navbar-brand, .brandlogo{
     font-size:1.5rem
 }
 
-.navbar-brand:hover{
-    color: var(--main-color);
+.abouth{
+    color: var(--color);
 }
 
 a:hover{
     text-decoration: none;
 }
 
-.circle{
-    position:absolute;
-    border-radius:50%;
-    background: var(--bg-color);
-}
-
-.circle1{
-    height:200px;
-    width:200px;
-    right:-95px;
-    top:-95px;
-    /* display:none; */
-}
 
 nav, .container{
     overflow:hidden !important;
 }
 
-.sharenote, .coming, .notif, button{
-    font-family: Gilroy-medium;
+.sharenote, .coming, .abouth{
+    font-family: Gilroy-bold;
+}
+
+.notif, .aboutp, .pickp{
+    font-family:Gilroy-medium;
 }
 
 .sharenote{
     color: var(--color);
     line-height: 58px;
-    margin-top:4rem;
 }
 
 .mobile1{
@@ -89,12 +84,104 @@ input{
     top:40%;
 }
 
-.circle2{
-    height:800px;
-    width:800px;
-    left:-350px;
-    top:430px !important;
-    z-index:-1 !important;
+.aboutp{
+    width:80%;
+    margin:30px auto;
+    font-size:1.4rem;
 }
 
+.pickp{
+    font-size:1.5rem;
+}
 
+.footform{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color);
+}
+
+/* @media screen and (max-width:330px){
+    input{
+        width:100px !important;
+    }
+} */
+
+
+@media screen and (max-width:451px){
+    
+    input{
+        max-width:150px;
+    }
+    button{
+        width:95px;
+        font-size:0.8rem;
+        padding:3px 5px !important;
+    }
+    ::-webkit-input-placeholder{
+        font-size:0.8rem;
+    }
+    
+}
+
+@media screen and (max-width:517px){
+    .sharenote{
+        line-height:40px;
+        font-size:1.5rem;
+    }
+    .coming{
+        font-size:1.6rem !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        padding:1.8rem !important;
+    }
+
+   .aboutp{
+       width:100%;
+   }
+
+    /* .sharenote{
+        font-size:1.8rem !important;
+    } */
+
+    .ordering{
+        order:2 !important;
+    }
+
+    .orderin{
+        order:1 !important;
+        margin-bottom:3rem;
+    }
+
+    .dropped{
+        margin-bottom:3rem;
+    }
+
+    form{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:991px), (min-width:768){
+    input{
+        width:200px !important;
+    }
+
+    .sharenote{
+        font-size:1.6rem !important;
+        line-height:30px;
+    }
+
+    .notif:nth-child(1){
+        margin-top:0.9rem !important;
+    }
+}
