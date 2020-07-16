@@ -2,7 +2,6 @@ AOS.init({
     delay:250,
 });
 
-
 window.addEventListener('load',() => {
     const options = {
         // height:0,
@@ -13,6 +12,4 @@ window.addEventListener('load',() => {
     }
     
     gsap.to('.preloader',options);
-})
-
-
+});
