@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: Gilroy-medium;
-    src: url('font/Gilroy-Medium.ttf');
+    src: url('../dist/font/Gilroy-Medium.ttf');
   }
 
   @font-face {
     font-family:Gilroy-bold;
-    src:url('font/Gilroy-Bold.ttf');
+    src:url('../dist/font/Gilroy-Bold.ttf');
   }
 
 
@@ -22,10 +22,56 @@
     margin:0;
 }
 
-a.navbar-brand, .brandlogo{
+.preloader{
+    position:fixed;
+    top:0%;
+    display:flex;
+    width:100%;
+    z-index:2;
+    height:100vh;
+    background: var(--color);
+    align-items: center;
+    justify-content: center;
+}
+
+a.navbar-brand, .brandlogo, .loader{
     font-family: 'Gochi Hand';
     color: var(--color) !important;
     font-size:1.5rem
+}
+
+.loader{
+    color:white !important;
+    animation:bright .8s ease-in-out infinite alternate;
+}
+
+@keyframes bright{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.loaderimg{
+    animation:rotate .8s ease infinite forwards;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.navbar-brand{
+    animation-delay:1.5s;
+    animation-duration:2s;
 }
 
 .abouth{
