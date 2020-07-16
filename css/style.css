@@ -34,13 +34,6 @@
     justify-content: center;
 }
 
-.preload{
-    flex: 0 0 20%;
-    height:100vh;
-    border:none;
-    background: var(--color);
-}
-
 a.navbar-brand, .brandlogo, .loader{
     font-family: 'Gochi Hand';
     color: var(--color) !important;

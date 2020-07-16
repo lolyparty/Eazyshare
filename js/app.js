@@ -1,10 +1,6 @@
 AOS.init({
-    // offset:0,
-    // duration: 3000,
-    delay:500,
+    delay:250,
 });
-
-// scrollOut();
 
 
 window.addEventListener('load',() => {
@@ -13,7 +9,7 @@ window.addEventListener('load',() => {
         // stagger:.3,
         right:0,
         width:0,
-        duration:1.5,
+        duration:2,
     }
     
     gsap.to('.preloader',options);
