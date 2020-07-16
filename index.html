@@ -7,16 +7,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--google font-->
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
-    <link rel="preload" href="dist/style.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--Aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="dist/style.css" type="text/css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Eazyshare</title>
 </head>
 <body>
-        <nav class="navbar py-3 bg-transparent" data-aos="fade-down" data-aos-duration="1700">
+
+    <div class="preloader">
+        <img src="img/Group 21 (1).svg" class="img-fluid loaderimg" alt="logo"><span class="loader ml-2">Eazyshare</span>
+        <!-- <div class="preload"></div>
+        <div class="preload"></div>
+        <div class="preload"></div>
+        <div class="preload"></div>
+        <div class="preload"></div> -->
+    </div>
+
+
+
+
+        <nav class="navbar py-3 bg-transparent" data-aos="fade-down" data-aos-duration="1000">
             <div class="container pl-1">
-                <a class="navbar-brand py-md-4" href="index.html"><img src="img/Group 21.svg"> Eazyshare</a>
+                <a class="navbar-brand py-md-4 animate__animated animate__swing pl-2" href="index.html"><img src="img/Group 21.svg"> Eazyshare</a>
             </div>
         </nav>
         <section class="pb-5 mb-5">
@@ -27,8 +43,8 @@
                     </div>
 
                     <div class="col-md-6 text-center text-md-left">
-                        <div data-aos="fade-right" data-aos-duration="2500">
-                            <h2 class="sharenote mt-4">File sharing just got easier<br /> with EazyShare</h2>
+                        <div  data-aos-duration="2500" data-aos="fade-right">
+                            <h2 class="sharenote mt-4" data-scroll>File sharing just got easier<br /> with EazyShare</h2>
                         </div>
                         <div data-aos="fade-right" data-aos-duration="2500">
                             <h3 class="coming pt-3 pb-3">Coming soon to</h3>
@@ -102,15 +118,14 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <!---aos-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            // offset:0,
-            // duration: 3000,
-        });
-      </script>
+    <!---scrollout-->
+    <!-- <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script> -->
+    <!---gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
