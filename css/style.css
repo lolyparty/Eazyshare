@@ -191,8 +191,9 @@ footer{
     width:0;
 }
 
-.appscreeens{
-    margin:20px 40px;
+.appscreens{
+    max-height:355px;
+    max-width:184px;
 }
 
 /* media queries */
