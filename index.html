@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!---ecko lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Eazyshare</title>
 </head>
@@ -22,21 +24,20 @@
         <img src="img/Group 21 (1).svg" class="img-fluid loaderimg" alt="logo"><span class="loader ml-2">Eazyshare</span>
     </div>
 
-
-
-
+<!---nav bar-->
         <nav class="navbar py-3 bg-transparent" data-aos="fade-down" data-aos-duration="1000">
             <div class="container pl-1">
                 <a class="navbar-brand py-md-4 animate__animated animate__swing pl-2" href="index.html"><img src="img/Group 21.svg"> Eazyshare</a>
             </div>
         </nav>
-        <section class="pb-5 mb-5">
+
+<!--main area starts here-->
+        <section class="pb-5 mb-5 head">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 pt-md-5 mt-5 pt-2" data-aos="fade-left" data-aos-duration="1500">
                         <img src="img/undraw_drag_5i9w 1 1.svg" class="img-fluid mt-md-5" alt="pick and drop file">
                     </div>
-
                     <div class="col-md-6 text-center text-md-left">
                         <div  data-aos-duration="2500" data-aos="fade-right">
                             <h2 class="sharenote mt-4" data-scroll>File sharing just got easier<br /> with EazyShare</h2>
@@ -56,17 +57,26 @@
                             <button class="submit" name="submit">GET NOTIFIED</button>
                         </form>
                         </div>
-                        
                     </div>
+
                 </div>
             </div>
         </section>
 
         <!--about-->
-        <section class="pt-4 pb-3">
+        <section class="pt-4 pb-3 ">
             <div class="container" >
                 <h2 class="abouth text-center py-3">About</h2>
-                <p class="aboutp py-3" data-aos="zoom-in" data-aos-duration="1500">Eazyshare app defies the odds of using wifi, bluetooth and cellular network technology to connect to other devices such as android, ios, windows and macOs. With the pick and drop method of sharing, Eazyshare is second to none. It saves you quality time by sharing apps, music, videos and files to you loved ones in the blink of an eye. Its unlimited sharing volume comes in handy, as it does it in record time.</p>
+                <div class="row">
+                    <div class="col-md-6 text-center p-5 aboutimg" data-aos="fade-right" data-aos-duration="1000">
+                        <div><img src="img/Group 61 1.svg" alt="transfer files" class="img-fluid mt-md-2 mb-3"></div>
+                        <div><img src="img/Group 56 1.svg" alt="transfer files" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-6 aboutnote">
+                        <p class="aboutp py-md-4 px-md-5 py-3 px-3" data-aos="zoom-in" data-aos-duration="1500">Eazyshare app defies the odds of using wifi, bluetooth and cellular network technology to connect to other devices such as android, ios, windows and macOs. With the pick and drop method of sharing, Eazyshare is second to none. It saves you quality time by sharing apps, music, videos and files to you loved ones in the blink of an eye. Its unlimited sharing volume comes in handy, as it does it in record time.</p>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -77,31 +87,54 @@
                 
                     <div class="row py-3 my-3">
                         <div class="col-md-6 ordering" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="img/undraw_mobile_apps_spmp 1.svg" alt="export file" class="img-fluid"> 
+                            <img src="img/undraw_mobile_apps_spmp 1.svg" alt="export file" class="img-fluid pickimg mt-2"> 
                         </div>
-                        <div class="col-md-6 orderin" data-aos="fade-left" data-aos-duration="1500">
-                            <h3 class="my-2 pick">Pick</h3>
-                            <p class="pickp"> When you have decided on the app, music, video or file that you want to share, pick it from your Eazyshare directory...</p>
+                        <div class="col-md-6  orderin" data-aos="fade-left" data-aos-duration="1500">
+                            <div class=" px-5 _pick py-5">
+                                <h3 class="my-2 pick pt-4 pb-3">Pick a file</h3>
+                                <p class="pickp pb-5"> When you have decided on the app, music, video or file that you want to share, pick it from your Eazyshare directory...</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="row mt-5 py-5">
-                        <div class="col-md-6 dropped" data-aos="fade-right" data-aos-duration="1500">
-                            <h3 class="my-2 pick">Drop</h3>
-                            <p class="pickp">Drop the app, music, video or file into the Eazyshare directory of a destination device without any friction in between.</p>
+                        <div class="col-md-6 " data-aos="fade-right" data-aos-duration="1500">
+                            <div class="dropped">
+                                <h3 class="mb-4 pick">Drop the file</h3>
+                                <p class="pickp">Drop the app, music, video or file into the Eazyshare directory of a destination device without any friction in between.</p>
+                            </div>
                         </div>
                         <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                            <img src="img/undraw_insert_block_efyb 1.svg" alt="export file" class="img-fluid"> 
+                            <img src="img/undraw_insert_block_efyb 1.svg" alt="export file" class="img-fluid dropimg mt-2"> 
                         </div>
                     </div>
-                    <div class="footform my-5 py-5" data-aos-duration="1000" data-aos="fade-up-left">
-                        <form method="POST" action="dist/insert.php" class="form-inline">
-                            <input class="form-control input-group-prepend" name="email" type="email" placeholder="Enter your email here" required>
-                            <button class="submit" name="submit">GET NOTIFIED</button>
-                        </form>
-                    </div>
+                    
             </div>
         </section>
+
+        <!--screenshots-->
+        <section>
+            <div class="container">
+                <h2 class="abouth text-center py-5">Screenshots</h2>
+                <div class="screens p-5">
+                    <a href="img/Group 39 1.svg" class="mx-5" data-type="image" data-gallery="app" data-toggle="lightbox"><img src="img/Group 39 2.svg" alt="eazyshare app" class="appscreens app1"></a> 
+                    <a href="img/Group 40.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 50.svg" alt="eazyshare app" class="appscreens app2"></a>
+                    <a href="img/Group 41.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 51.svg" alt="eazyshare app" class="appscreens app3"></a>
+                    <a href="img/Group 42.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 52.svg" alt="eazyshare app" class="appscreens app4"></a>
+                    <a href="img/Group 43.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 53.svg" alt="eazyshare app" class="appscreens app5"></a>
+                    <a href='img/Group 44.svg' class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 54.svg" alt="eazyshare app" class="appscreens app6"></a>
+                </div>
+            </div>
+
+            <div class="footform my-5 py-5 container" data-aos-duration="1000" data-aos="flip-up">
+                <form method="POST" action="dist/insert.php" class="form-inline">
+                    <input class="form-control input-group-prepend" name="email" type="email" placeholder="Enter your email here" required>
+                    <button class="submit" name="submit">GET NOTIFIED</button>
+                </form>
+            </div>
+        </section>
+
+        <!--footer-->
         <footer class="py-4" >
             <div class="container text-center text-light">
                 <p>© 2020 Eazyshare Inc. All rights reserved</p>
@@ -118,7 +151,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!---gsap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <!--ecko lightbox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
 
     <script src="js/app.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+    </script>
 </body>
 </html>
