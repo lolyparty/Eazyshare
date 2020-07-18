@@ -25,7 +25,7 @@ window.addEventListener('load',() => {
 particlesJS('particles-js', {
     "particles": {
         "number": {
-          "value": 15,
+          "value": 5,
           "density": {
             "enable": true,
             "value_area": 800
@@ -60,7 +60,7 @@ particlesJS('particles-js', {
           }
         },
         "size": {
-          "value": 15,
+          "value": 16,
           "random": true,
           "anim": {
             "enable": false,
@@ -78,7 +78,7 @@ particlesJS('particles-js', {
         },
         "move": {
           "enable": true,
-          "speed": 5,
+          "speed": 4,
           "direction": "top",
           "random": true,
           "straight": false,
@@ -95,8 +95,8 @@ particlesJS('particles-js', {
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": false,
-            "mode": "repulse"
+            "enable": true,
+            "mode": "bubble"
           },
           "onclick": {
             "enable": true,
