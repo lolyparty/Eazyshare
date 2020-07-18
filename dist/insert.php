@@ -18,9 +18,9 @@
 // }
 ?>
 
+<!-- 
 
-
-<!-- //herokuapp -->
+//herokuapp -->
 <?php
 $conn = new mysqli("85.10.205.173:3306","eazyshare","59381@Remotemysql","eazymaillist");
 
