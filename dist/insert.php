@@ -1,4 +1,3 @@
-<!-- 000webhost  -->
 <?php
 // $conn = new mysqli("localhost","id14343916_eazy","4Zz#n)Fb2~Y%(F+t","id14343916_eazysharedb");
 
