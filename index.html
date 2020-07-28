@@ -116,12 +116,12 @@
             <div class="container">
                 <h2 class="abouth text-center py-5">App preview</h2>
                 <div class="screens p-5">
-                    <a href="img/Group 39 1.svg" class="mx-5" data-type="image" data-gallery="app" data-toggle="lightbox"><img src="img/Group 39 1.svg" alt="eazyshare app" class="appscreens app1"></a> 
-                    <a href="img/Group 40.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 40.svg" alt="eazyshare app" class="appscreens app2"></a>
-                    <a href="img/Group 41.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 41.svg" alt="eazyshare app" class="appscreens app3"></a>
-                    <a href="img/Group 42.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 42.svg" alt="eazyshare app" class="appscreens app4"></a>
-                    <a href="img/Group 43.svg" class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 43.svg" alt="eazyshare app" class="appscreens app5"></a>
-                    <a href='img/Group 44.svg' class="mx-5" data-gallery="app" data-toggle="lightbox"><img src="img/Group 44.svg" alt="eazyshare app" class="appscreens app6"></a>
+                    <a href="img/Group 39 1.svg" class="mx-5" data-toggle="lightbox"><img src="img/Group 39 1.svg" alt="eazyshare app" class="appscreens app1"></a> 
+                    <a href="img/Group 40.svg" class="mx-5" data-toggle="lightbox"><img src="img/Group 40.svg" alt="eazyshare app" class="appscreens app2"></a>
+                    <a href="img/Group 41.svg" class="mx-5" data-toggle="lightbox"><img src="img/Group 41.svg" alt="eazyshare app" class="appscreens app3"></a>
+                    <a href="img/Group 42.svg" class="mx-5" data-toggle="lightbox"><img src="img/Group 42.svg" alt="eazyshare app" class="appscreens app4"></a>
+                    <a href="img/Group 43.svg" class="mx-5" data-toggle="lightbox"><img src="img/Group 43.svg" alt="eazyshare app" class="appscreens app5"></a>
+                    <a href='img/Group 44.svg' class="mx-5" data-toggle="lightbox"><img src="img/Group 44.svg" alt="eazyshare app" class="appscreens app6"></a>
                 </div>
             </div>
 
@@ -154,10 +154,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
     <!--particle js-->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/app.js">
+    <script src="js/app.js"></script>
+    <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
+                // console.log('working');
             });
     </script>
 </body>
